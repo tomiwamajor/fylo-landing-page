@@ -155,7 +155,9 @@ body {
     padding-left: 10px; }
 
 .section-signin {
-  width: 100%;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   background-color: #585989;
   padding-left: 30px;
@@ -218,7 +220,7 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #070439;
-  width: 100%;
+  width: 1400px;
   color: #f6f6fe; }
   @media only screen and (max-width: 882px) {
     .section-footer {

@@ -197,7 +197,10 @@ body {
 }
 
 .section-signin {
-  width: 100%;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  // max-width: 90%;
   display: flex;
   background-color: hsl(238, 22%, 44%);
   padding-left: 30px;
@@ -275,7 +278,10 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: hsl(243, 87%, 12%);
-  width: 100%;
+  width: 1400px;
+  // margin-right: auto;
+  // margin-left: auto;
+  // max-width: 90%;
   color: hsl(240, 75%, 98%);
 
   @media only screen and (max-width: 882px) {
