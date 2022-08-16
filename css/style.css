@@ -88,7 +88,8 @@ body {
         width: 90%; } }
   .section-top__image {
     content: url(/images/illustration-1.svg);
-    width: 80%;
+    width: 600px;
+    max-width: 80%;
     height: 100%;
     position: relative; }
 
@@ -131,7 +132,8 @@ body {
         width: 200px; } }
   .section-mid__image {
     content: url(/images/illustration-2.svg);
-    width: 80%;
+    width: 600px;
+    max-width: 80%;
     height: 100%;
     position: relative; }
   .section-mid__author {
