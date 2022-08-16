@@ -43,6 +43,7 @@ body {
   display: flex;
   height: 400px;
   margin-top: 100px;
+  width: 100%;
   &__text {
     padding-left: 30px;
 
@@ -54,12 +55,12 @@ body {
   }
 
   @media only screen and (max-width: 1282px) {
-    flex-direction: column-reverse;
     margin-top: 400px;
   }
 
   @media only screen and (max-width: 882px) {
     margin-top: 400px;
+    flex-direction: column-reverse;
   }
   &__header {
     color: hsl(243, 87%, 12%);
@@ -102,6 +103,7 @@ body {
       cursor: pointer;
       background-color: hsla(224, 93%, 58%, 0.678);
     }
+    margin-bottom: 60px;
 
     @media only screen and (max-width: 1282px) {
       width: 90%;
@@ -120,10 +122,15 @@ body {
   height: 580px;
   margin-top: 100px;
   margin-bottom: 50px;
+  width: 100%;
 
   @media only screen and (max-width: 1282px) {
-    flex-direction: column-reverse;
     margin-top: 600px;
+  }
+
+  @media only screen and (max-width: 882px) {
+    margin-top: 400px;
+    flex-direction: column-reverse;
   }
 
   &__topimg {
@@ -299,6 +306,9 @@ body {
     list-style: none;
     justify-content: space-between;
     width: 100px;
+  }
+  &__space {
+    padding-right: 10px;
   }
 }
 
