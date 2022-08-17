@@ -204,26 +204,33 @@ body {
 }
 
 .section-signin {
-  width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 90%;
-  display: flex;
   background-color: hsl(238, 22%, 44%);
-  padding-left: 30px;
-  padding-right: 30px;
 
-  @media only screen and (max-width: 1282px) {
-    flex-direction: column;
-    margin-top: 200px;
-    padding-right: 0;
+  &__purple {
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
+    display: flex;
+    background-color: hsl(238, 22%, 44%);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media only screen and (max-width: 1282px) {
+      margin-top: 150px;
+      padding-right: 0;
+    }
+    @media only screen and (max-width: 882px) {
+      flex-direction: column;
+    }
   }
+
   &__left {
     color: hsl(240, 75%, 98%);
     font-family: "Open Sans", sans-serif;
     width: 50%;
 
-    @media only screen and (max-width: 1282px) {
+    @media only screen and (max-width: 882px) {
       width: 100%;
     }
   }
@@ -244,8 +251,9 @@ body {
     align-self: center;
     display: block;
     padding-left: 30px;
+    width: 50%;
 
-    @media only screen and (max-width: 1282px) {
+    @media only screen and (max-width: 882px) {
       width: 100%;
       padding-left: 0;
     }
@@ -253,21 +261,23 @@ body {
   &__email {
     padding: 15px;
     background-color: hsl(240, 75%, 98%);
-    width: 500px;
+    width: 400px;
     border: none;
     margin-bottom: 10px;
     border: 1px solid hsl(170, 45%, 43%);
 
     @media only screen and (max-width: 1282px) {
-      width: 90%;
       margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 882px) {
+      width: 90%;
     }
   }
   &__button {
     padding: 15px;
     background-color: hsl(224, 93%, 58%);
     border: none;
-    width: 200px;
+    width: 180px;
     &:hover,
     &:active {
       cursor: pointer;
@@ -275,33 +285,38 @@ body {
     }
 
     @media only screen and (max-width: 1282px) {
-      width: 90%;
       margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 882px) {
+      width: 90%;
     }
   }
 }
 
 .section-footer {
-  width: 1100px;
-  padding-left: 30px;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: hsl(243, 87%, 12%);
-  max-width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  color: hsl(240, 75%, 98%);
 
-  @media only screen and (max-width: 882px) {
-    padding-right: 0;
+  &__blue {
+    width: 1100px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: hsl(243, 87%, 12%);
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: hsl(240, 75%, 98%);
+
+    @media only screen and (max-width: 882px) {
+      padding-right: 0;
+    }
   }
-
   &__list {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
 
-    @media only screen and (max-width: 1282px) {
+    @media only screen and (max-width: 882px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -311,8 +326,8 @@ body {
     @media only screen and (max-width: 1282px) {
       margin-left: 35%;
     }
-    @media only screen and (max-width: 882px) {
-      margin-left: 25%;
+    @media only screen and (max-width: 312px) {
+      margin: auto;
     }
   }
   &__unordered {

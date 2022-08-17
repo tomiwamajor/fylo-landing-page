@@ -160,24 +160,28 @@ body {
     padding-left: 10px; }
 
 .section-signin {
-  width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 90%;
-  display: flex;
-  background-color: #585989;
-  padding-left: 30px;
-  padding-right: 30px; }
-  @media only screen and (max-width: 1282px) {
-    .section-signin {
-      flex-direction: column;
-      margin-top: 200px;
-      padding-right: 0; } }
+  background-color: #585989; }
+  .section-signin__purple {
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
+    display: flex;
+    background-color: #585989;
+    padding-left: 30px;
+    padding-right: 30px; }
+    @media only screen and (max-width: 1282px) {
+      .section-signin__purple {
+        margin-top: 150px;
+        padding-right: 0; } }
+    @media only screen and (max-width: 882px) {
+      .section-signin__purple {
+        flex-direction: column; } }
   .section-signin__left {
     color: #f6f6fe;
     font-family: "Open Sans", sans-serif;
     width: 50%; }
-    @media only screen and (max-width: 1282px) {
+    @media only screen and (max-width: 882px) {
       .section-signin__left {
         width: 100%; } }
   .section-signin__header {
@@ -193,53 +197,60 @@ body {
     justify-content: center;
     align-self: center;
     display: block;
-    padding-left: 30px; }
-    @media only screen and (max-width: 1282px) {
+    padding-left: 30px;
+    width: 50%; }
+    @media only screen and (max-width: 882px) {
       .section-signin__right {
         width: 100%;
         padding-left: 0; } }
   .section-signin__email {
     padding: 15px;
     background-color: #f6f6fe;
-    width: 500px;
+    width: 400px;
     border: none;
     margin-bottom: 10px;
     border: 1px solid #3c9f8f; }
     @media only screen and (max-width: 1282px) {
       .section-signin__email {
-        width: 90%;
         margin-bottom: 10px; } }
+    @media only screen and (max-width: 882px) {
+      .section-signin__email {
+        width: 90%; } }
   .section-signin__button {
     padding: 15px;
     background-color: #3065f8;
     border: none;
-    width: 200px; }
+    width: 180px; }
     .section-signin__button:hover, .section-signin__button:active {
       cursor: pointer;
       background-color: rgba(48, 101, 248, 0.678); }
     @media only screen and (max-width: 1282px) {
       .section-signin__button {
-        width: 90%;
         margin-bottom: 30px; } }
+    @media only screen and (max-width: 882px) {
+      .section-signin__button {
+        width: 90%; } }
 
 .section-footer {
-  width: 1100px;
-  padding-left: 30px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #070439;
-  max-width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  color: #f6f6fe; }
-  @media only screen and (max-width: 882px) {
-    .section-footer {
-      padding-right: 0; } }
+  background-color: #070439; }
+  .section-footer__blue {
+    width: 1100px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #070439;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #f6f6fe; }
+    @media only screen and (max-width: 882px) {
+      .section-footer__blue {
+        padding-right: 0; } }
   .section-footer__list {
     padding-top: 10px;
     display: flex;
     justify-content: space-around; }
-    @media only screen and (max-width: 1282px) {
+    @media only screen and (max-width: 882px) {
       .section-footer__list {
         flex-direction: column;
         justify-content: center;
@@ -247,9 +258,9 @@ body {
   @media only screen and (max-width: 1282px) {
     .section-footer__img {
       margin-left: 35%; } }
-  @media only screen and (max-width: 882px) {
+  @media only screen and (max-width: 312px) {
     .section-footer__img {
-      margin-left: 25%; } }
+      margin: auto; } }
   .section-footer__unordered {
     list-style: none; }
   .section-footer__gap {
