@@ -10,17 +10,20 @@ body {
 
 .header {
   width: 1100px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__img {
     padding-left: 30px;
 
     @media only screen and (max-width: 882px) {
       padding-right: 0;
+      width: 100px;
     }
   }
   &__unordered {
@@ -117,10 +120,14 @@ body {
   }
   &__image {
     content: url(/images/illustration-1.svg);
-    width: 600px;
-    max-width: 80%;
     height: 100%;
     position: relative;
+
+    @media only screen and (max-width: 882px) {
+      height: 400px;
+      width: 1100px;
+      max-width: 90%;
+    }
   }
 }
 
@@ -139,7 +146,7 @@ body {
   }
 
   @media only screen and (max-width: 882px) {
-    margin-top: 400px;
+    margin-top: 350px;
     flex-direction: column-reverse;
   }
 
@@ -240,6 +247,7 @@ body {
 
     @media only screen and (max-width: 1282px) {
       width: 100%;
+      padding-left: 0;
     }
   }
   &__email {
